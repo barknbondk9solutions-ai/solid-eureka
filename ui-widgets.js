@@ -1,11 +1,20 @@
-/* ui-widgets.js
-   - Left-side scroll-to-top button
-   - Centered cookie consent popup (site-wide)
-*/
-
 (function () {
-  const COOKIE_KEY = "cookiesAccepted";
+  const COOKIE_NAME = "cookiesAccepted";
   const PRIVACY_URL = "https://legal.barknbondk9solutions.com/#privacy";
+
+  /* ==========================
+     Auto-detect main domain
+  ========================== */
+  function getMainDomain() {
+    const hostname = window.location.hostname;
+    const parts = hostname.split(".");
+    if (parts.length >= 2) {
+      // Join last two parts (example.com)
+      return "." + parts.slice(-2).join(".");
+    }
+    return hostname;
+  }
+  const COOKIE_DOMAIN = getMainDomain();
 
   /* ==========================
      Create safe wrapper
@@ -33,7 +42,7 @@
     position: "fixed",
     left: "20px",
     top: "50%",
-    transform: "translateY(-50%) translateX(-100px)", // hidden off-screen
+    transform: "translateY(-50%) translateX(-100px)",
     width: "55px",
     height: "55px",
     border: "none",
@@ -85,9 +94,33 @@
   });
 
   /* ==========================
+     Cookie helper functions
+  ========================== */
+  function setCookie(name, value, days, domain) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      expires = "; expires=" + date.toUTCString();
+    }
+    let domainPart = domain ? "; domain=" + domain : "";
+    document.cookie = name + "=" + value + expires + "; path=/" + domainPart;
+  }
+
+  function getCookie(name) {
+    const cookies = document.cookie.split(";").map(c => c.trim());
+    for (let c of cookies) {
+      if (c.indexOf(name + "=") === 0) {
+        return c.substring(name.length + 1);
+      }
+    }
+    return null;
+  }
+
+  /* ==========================
      Cookie Consent Popup (site-wide)
   ========================== */
-  if (!localStorage.getItem(COOKIE_KEY)) {
+  if (!getCookie(COOKIE_NAME)) {
     const cookiePopup = document.createElement("div");
     cookiePopup.innerHTML = `
       <div style="flex:1; font-size:16px; line-height:1.5; text-align:center; color:#fff;">
@@ -149,7 +182,7 @@
     }, 400);
 
     acceptBtn.addEventListener("click", () => {
-      localStorage.setItem(COOKIE_KEY, "true"); // site-wide acceptance
+      setCookie(COOKIE_NAME, "true", 365, COOKIE_DOMAIN); // site-wide, 1 year
       cookiePopup.style.opacity = "0";
       cookiePopup.style.transform = "translate(-50%, -50%) scale(0.8)";
       setTimeout(() => cookiePopup.remove(), 400);
