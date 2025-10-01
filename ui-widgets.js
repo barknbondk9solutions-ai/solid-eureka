@@ -1,0 +1,151 @@
+/* ==========================
+   Create a safe wrapper
+   ========================== */
+const wrapper = document.createElement("div");
+Object.assign(wrapper.style, {
+  position: "fixed",
+  top: "0",
+  left: "0",
+  width: "100%",
+  height: "100%",
+  pointerEvents: "none", // allow interactions only on children
+  zIndex: "1000"          // base z-index for wrapper
+});
+document.body.appendChild(wrapper);
+
+/* ==========================
+   Scroll To Top Button (left side)
+   ========================== */
+const scrollBtn = document.createElement("button");
+scrollBtn.textContent = "↑";
+wrapper.appendChild(scrollBtn);
+
+Object.assign(scrollBtn.style, {
+  position: "fixed",
+  left: "20px",
+  top: "50%",
+  transform: "translateY(-50%) translateX(-100px)", // hidden off-screen
+  width: "55px",
+  height: "55px",
+  border: "none",
+  borderRadius: "50%",
+  background: "rgba(50, 50, 50, 0.6)",
+  backdropFilter: "blur(6px)",
+  color: "#fff",
+  fontSize: "26px",
+  fontWeight: "bold",
+  cursor: "pointer",
+  opacity: "0",
+  pointerEvents: "auto",
+  transition: "opacity 0.4s ease, transform 0.4s ease",
+  boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+  zIndex: "1001"
+});
+
+let isVisible = false;
+
+window.addEventListener("scroll", () => {
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const halfway = docHeight / 2;
+
+  if (window.scrollY > halfway && !isVisible) {
+    scrollBtn.style.opacity = "1";
+    scrollBtn.style.transform = "translateY(-50%) translateX(0)";
+    isVisible = true;
+  } else if (window.scrollY === 0 && isVisible) {
+    scrollBtn.style.opacity = "0";
+    scrollBtn.style.transform = "translateY(-50%) translateX(-100px)";
+    isVisible = false;
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+scrollBtn.addEventListener("mouseenter", () => {
+  scrollBtn.style.background = "rgba(50, 50, 50, 0.8)";
+  scrollBtn.style.transform = "translateY(-50%) translateX(0) scale(1.1)";
+});
+
+scrollBtn.addEventListener("mouseleave", () => {
+  scrollBtn.style.background = "rgba(50, 50, 50, 0.6)";
+  scrollBtn.style.transform = "translateY(-50%) translateX(0) scale(1)";
+});
+
+
+/* ==========================
+   Cookie Consent Popup (Centered)
+   ========================== */
+if (!localStorage.getItem("cookiesAccepted")) {
+  const cookiePopup = document.createElement("div");
+  cookiePopup.innerHTML = `
+<div style="flex:1; font-size:16px; line-height:1.5; text-align:center; color:#fff;">
+  This website may use cookies and other trackers to enhance your browsing experience, analyze site usage, and provide relevant advertising. Cookies do not collect personal information unless you provide it voluntarily through forms. Please review our 
+  <a href="https://legal.barknbondk9solutions.com/#privacy" target="_blank" rel="noopener noreferrer" style="color:#fff; text-decoration:underline;">Privacy Policy</a> 
+  to understand how your information is used and protected.
+</div>
+
+    <button id="acceptCookies">Accept</button>
+  `;
+  wrapper.appendChild(cookiePopup);
+
+  Object.assign(cookiePopup.style, {
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%) scale(0.8)", // start small for subtle animation
+    width: "90%",
+    maxWidth: "400px",
+    background: "rgba(50, 50, 50, 0.95)",
+    color: "#fff",
+    padding: "20px",
+    borderRadius: "12px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "sans-serif",
+    boxSizing: "border-box",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
+    transition: "transform 0.4s ease, opacity 0.4s ease",
+    opacity: "0",
+    pointerEvents: "auto",
+    zIndex: "1002"
+  });
+
+  // Style button
+  const acceptBtn = cookiePopup.querySelector("#acceptCookies");
+  Object.assign(acceptBtn.style, {
+    background: "#4CAF50",
+    color: "#fff",
+    border: "none",
+    padding: "12px 25px",
+    borderRadius: "8px",
+    cursor: "pointer",
+    fontWeight: "bold",
+    fontSize: "16px",
+    marginTop: "15px"
+  });
+
+  acceptBtn.addEventListener("mouseenter", () => {
+    acceptBtn.style.background = "#45a049";
+  });
+  acceptBtn.addEventListener("mouseleave", () => {
+    acceptBtn.style.background = "#4CAF50";
+  });
+
+  // Animate in popup
+  setTimeout(() => {
+    cookiePopup.style.opacity = "1";
+    cookiePopup.style.transform = "translate(-50%, -50%) scale(1)";
+  }, 400);
+
+  // Handle acceptance
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookiePopup.style.opacity = "0";
+    cookiePopup.style.transform = "translate(-50%, -50%) scale(0.8)";
+    setTimeout(() => cookiePopup.remove(), 400);
+  });
+}
