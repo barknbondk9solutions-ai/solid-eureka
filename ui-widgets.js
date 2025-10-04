@@ -41,7 +41,7 @@
   Object.assign(scrollBtn.style, {
     position: "fixed",
     left: "20px",
-    top: "50%",
+    top: "93%",
     transform: "translateY(-50%) translateX(-100px)",
     width: "55px",
     height: "55px",
