@@ -332,7 +332,6 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
     }
   });
 })();
-document.addEventListener('touchstart', e => { if(e.touches.length>1)e.preventDefault(); }, {passive:false});
 </script>
 </body>
 </html>`;
