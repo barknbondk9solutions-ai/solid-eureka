@@ -337,9 +337,16 @@ document.addEventListener('touchstart', e => { if(e.touches.length>1)e.preventDe
 </body>
 </html>`;
 
-  const response = new Response(html, { status: 200, headers: { "Content-Type": "text/html" } });
-  if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
-  return addSecurityHeaders(response);
+const response = new Response(html, { 
+  status: 200, 
+  headers: { 
+    "Content-Type": "text/html",
+    "X-Robots-Tag": "index, follow",
+    "Cache-Control": "public, max-age=0, s-maxage=60"
+  } 
+});
+if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
+return addSecurityHeaders(response);
 }
     // ==========================
     // 4️⃣ Default: allow humans
