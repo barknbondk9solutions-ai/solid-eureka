@@ -171,12 +171,13 @@ if (showAccessRestricted) {
 <meta name="twitter:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 
 <style>
-body {
+html, body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   color: #333;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 .container {
   max-width: 1000px;
