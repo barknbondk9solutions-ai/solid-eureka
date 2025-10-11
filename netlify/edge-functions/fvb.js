@@ -152,12 +152,11 @@ if (showAccessRestricted) {
 
 <title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
 
-<meta name="description" content="BarkNBondK9Solutions, LLC offers professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral training, leash training, and more—right in your home.">
-<meta name="keywords" content="mobile dog training Miami-Dade, dog trainer Miami, in-home dog training, puppy training Miami, obedience training Miami, behavioral dog training, private dog training, BarkNBondK9Solutions, dog training near me, dog obedience classes, dog behaviorist Miami, leash training, puppy socialization, dog recall training, housebreaking dogs, dog agility training, dog training services Miami-Dade, mobile puppy trainer, certified dog trainer Miami, professional dog trainer, dog obedience lessons, dog training consultation">
-
+<meta name="description" content="BarkNBondK9Solutions, LLC provides professional mobile dog training in Miami-Dade County. Services include puppy training, obedience, behavioral coaching, leash training, and more—right at your home.">
+<meta name="keywords" content="mobile dog training Miami-Dade,dog trainer Miami,in-home dog training,puppy training Miami,obedience training Miami,behavioral dog training,private dog training,BarkNBondK9Solutions,dog training near me,dog obedience classes,dog behaviorist Miami,leash training,puppy socialization,dog recall training,housebreaking dogs,dog agility training,dog training services Miami-Dade,mobile puppy trainer,certified dog trainer Miami,professional dog trainer,dog obedience lessons,dog training consultation">
 <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Social Sharing -->
+<!-- Open Graph / Social Sharing -->
 <meta property="og:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
 <meta property="og:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta property="og:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
