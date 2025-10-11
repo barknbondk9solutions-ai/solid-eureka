@@ -153,22 +153,30 @@ if (showAccessRestricted) {
 <title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
 
 <meta name="description" content="BarkNBondK9Solutions, LLC offers professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral training, leash training, and more—right in your home.">
-<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training, in-home dog training, puppy trainer Miami, obedience training, behavioral dog training, leash training, puppy socialization, private dog trainer Miami, local dog trainer, certified dog trainer Miami-Dade, mobile obedience training, Miami dog behaviorist, dog recall training, housebreaking puppy, professional dog trainer Florida, BarkNBondK9Solutions Miami, dog training services Miami-Dade County, Coral Gables, Kendall, Homestead, Hialeah, Miami Beach, North Miami, Palmetto Bay, Pinecrest, Doral, Miami Gardens, Sunny Isles Beach, Cutler Bay, Aventura, West Miami, Key Biscayne, Miami Lakes, South Miami, Miami Springs, Coral Terrace, Westchester, Kendall West, Richmond West, The Hammocks, University Park, Tamiami, Westwood Lakes, Fontainebleau, Olympia Heights">
+<meta name="keywords" content="mobile dog training Miami-Dade, dog trainer Miami, in-home dog training, puppy training Miami, obedience training Miami, behavioral dog training, private dog training, BarkNBondK9Solutions, dog training near me, dog obedience classes, dog behaviorist Miami, leash training, puppy socialization, dog recall training, housebreaking dogs, dog agility training, dog training services Miami-Dade, mobile puppy trainer, certified dog trainer Miami, professional dog trainer, dog obedience lessons, dog training consultation">
 
 <meta name="robots" content="index, follow">
 
-<!-- Open Graph / Social -->
+    <!-- Open Graph / Social Sharing -->
 <meta property="og:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
 <meta property="og:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta property="og:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 <meta property="og:url" content="https://barknbondk9solutions.com">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="BarkNBondK9Solutions">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="BarkNBondK9Solutions logo with a happy dog">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
 <meta name="twitter:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta name="twitter:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
+<meta name="twitter:image:alt" content="BarkNBondK9Solutions logo with a happy dog">
+<meta name="twitter:site" content="@BarkNBondK9Solutions">
+<meta name="twitter:creator" content="@BarkNBondK9Solutions">
 
 <style>
 html, body {
@@ -238,7 +246,7 @@ a { color: #e74c3c; text-decoration: none; word-break: break-word; }
 <div class="container" id="access-container">
   <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
 
-  <h1>Access Restricted</h1>
+  <h1>Access Limited</h1>
   <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
   <p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
 
