@@ -356,7 +356,7 @@ document.addEventListener('touchstart', e => { if(e.touches.length>1)e.preventDe
 };
 
 // ==========================
-// Helper: Add security headers
+// Helper: Add security headers + SEO
 // ==========================
 function addSecurityHeaders(response){
   response.headers.set("Strict-Transport-Security","max-age=63072000; includeSubDomains; preload");
@@ -374,5 +374,8 @@ function addSecurityHeaders(response){
     "media-src * data: blob:; "+
     "font-src * data: blob:;"
   );
+
+  response.headers.set("X-Robots-Tag", "index, follow");
+
   return response;
 }
