@@ -308,7 +308,6 @@ document.addEventListener('keydown',e=>{
   if(e.key==='PrintScreen'){navigator.clipboard.writeText(''); alert("Screenshots disabled.");}
 });
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
-document.addEventListener('gesturestart',e=>e.preventDefault());
 (function(){
   const devtools={open:false};
   const threshold=160;
