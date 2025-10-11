@@ -150,36 +150,158 @@ if (clientIP) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Access Restricted | BarkNBondK9Solutions, LLC</title>
+
+<!-- SEO + Local Metadata -->
+<meta name="description" content="BarkNBondK9Solutions, LLC is a mobile dog training company proudly serving Miami-Dade County, Florida. Professional, in-home obedience, puppy, and behavior training for dogs of all breeds.">
+<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training Miami, in-home dog training, puppy trainer Miami, obedience training, dog behaviorist Miami, dog training services Miami-Dade County, local dog trainer Miami-Dade, professional dog trainer Florida, puppy obedience, leash training, BarkNBondK9Solutions Miami, Bark N Bond K9 Solutions, dog training Coral Gables, dog trainer Kendall, dog training Homestead, dog training Hialeah, dog trainer Miami Beach, dog training North Miami, dog trainer Palmetto Bay, dog trainer Pinecrest, dog trainer Doral, dog trainer Miami Gardens, dog trainer Sunny Isles Beach, dog trainer Cutler Bay, dog trainer Aventura, dog trainer West Miami, dog trainer Key Biscayne, dog trainer Miami Lakes, dog trainer South Miami, dog trainer Miami Springs, dog trainer Coral Terrace, dog trainer Westchester, dog trainer Kendall West, dog trainer Richmond West, dog trainer The Hammocks, dog trainer University Park, dog trainer Tamiami, dog trainer Westwood Lakes, dog trainer Fontainebleau, dog trainer Olympia Heights, dog trainer Glenvar Heights">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Access Restricted | BarkNBondK9Solutions, LLC">
+<meta property="og:description" content="Mobile dog training company serving Miami-Dade County, Florida. Access restricted outside service area.">
+<meta property="og:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
+<meta property="og:url" content="https://barknbondk9solutions.com/access-restricted">
+<meta property="og:type" content="website">
+
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BarkNBondK9Solutions, LLC",
+  "url": "https://barknbondk9solutions.com",
+  "logo": "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png",
+  "image": "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png",
+  "telephone": "833-658-4388",
+  "email": "info@barknbondk9solutions.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Miami-Dade County",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00"}
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "Miami-Dade County"
+  },
+  "description": "Professional mobile dog training in Miami-Dade County, Florida. Obedience, puppy, and behavior sessions — right at your home.",
+  "priceRange": "$$"
+}
+</script>
+
 <style>
-body{font-family:Arial,sans-serif;text-align:center;background:#f9f9f9;color:#333;padding:50px 20px;user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:none;}
-.container{max-width:700px;margin:0 auto;background:#fff;border-radius:12px;padding:40px 30px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-.logo{max-width:180px;margin-bottom:30px;pointer-events:none;}
-h1{font-size:2em;margin-bottom:20px;color:#222;}
-p{font-size:1.1em;line-height:1.6;margin-bottom:20px;}
-.highlight{color:#e74c3c;font-weight:bold;}
-footer{margin-top:40px;font-size:0.9em;color:#666;}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  color: #333;
+  padding: 50px 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.logo {
+  max-width: 180px;
+  margin-bottom: 30px;
+  pointer-events: none;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}
 </style>
 </head>
 <body>
 <div class="container">
-<img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
-<h1>Access Restricted</h1>
-<p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
-<p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
-<footer>&copy; <span id="currentYear"></span> BarkNBondK9Solutions, LLC | Serving dog owners throughout Miami-Dade County</footer>
+  <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
+  <h1>Access Restricted</h1>
+  <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
+  <p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
+
+  <p><strong>Contact Us:</strong><br>
+    📞 <a href="tel:8336584388">833-658-4388</a><br>
+    📧 <a href="mailto:info@barknbondk9solutions.com">info@barknbondk9solutions.com</a><br>
+    Hours: Mon–Fri 8am–5pm | Sat 8am–12pm | Sun Closed
+  </p>
+
+  <footer>&copy; <span id="currentYear"></span> BarkNBondK9Solutions, LLC | Serving dog owners throughout Miami-Dade County</footer>
 </div>
+
 <script>
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Anti-copy & anti-inspect
 document.addEventListener('copy',e=>e.preventDefault());
 document.addEventListener('cut',e=>e.preventDefault());
 document.addEventListener('paste',e=>e.preventDefault());
 document.addEventListener('selectstart',e=>e.preventDefault());
 document.addEventListener('contextmenu',e=>e.preventDefault());
-document.addEventListener('keydown',e=>{if(e.ctrlKey&&['s','p','c','x','a','u'].includes(e.key.toLowerCase())){e.preventDefault();alert("Action disabled.");}if(e.key==='PrintScreen'){navigator.clipboard.writeText('');alert("Screenshots disabled.");}});
+document.addEventListener('keydown',e=>{
+  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())) {
+    e.preventDefault();
+    alert("Action disabled.");
+  }
+  if(e.key==='PrintScreen'){
+    navigator.clipboard.writeText('');
+    alert("Screenshots disabled.");
+  }
+});
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
 document.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
 document.addEventListener('gesturestart',e=>e.preventDefault());
-(function(){const devtools={open:false};const threshold=160;setInterval(()=>{const w=window.outerWidth-window.innerWidth,h=window.outerHeight-window.innerHeight;if(w>threshold||h>threshold){if(!devtools.open){devtools.open=true;alert("DevTools detected! Page actions are disabled.");document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";}}else devtools.open=false;},500);window.onkeydown=e=>{if(e.key==="F12"||(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key))){e.preventDefault();alert("DevTools shortcuts disabled.");}};window.addEventListener('resize',()=>{if(window.outerWidth-window.innerWidth>threshold||window.outerHeight-window.innerHeight>threshold){document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";}}})();document.addEventListener('touchend',e=>{if(e.touches.length>1)e.preventDefault();},{passive:false});
+
+// DevTools detection
+(function(){
+  const devtools={open:false};
+  const threshold=160;
+  setInterval(()=>{
+    const w=window.outerWidth-window.innerWidth;
+    const h=window.outerHeight-window.innerHeight;
+    if(w>threshold||h>threshold){
+      if(!devtools.open){
+        devtools.open=true;
+        alert("DevTools detected! Page actions are disabled.");
+        document.body.innerHTML="<h1 style='color:red;text-align:center;'>Access Denied</h1>";
+      }
+    } else devtools.open=false;
+  },500);
+  window.onkeydown=e=>{
+    if(e.key==="F12"||(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key))){
+      e.preventDefault();
+      alert("DevTools shortcuts disabled.");
+    }
+  };
+})();
 </script>
 </body>
 </html>`;
