@@ -297,7 +297,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='PrintScreen'){navigator.clipboard.writeText(''); alert("Screenshots disabled.");}
 });
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
-document.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
+document.addEventListener('touchstart',e=>e.preventDefault(),{passive:true});
 document.addEventListener('gesturestart',e=>e.preventDefault());
 (function(){
   const devtools={open:false};
