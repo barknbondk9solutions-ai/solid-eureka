@@ -185,6 +185,11 @@ html, body {
   padding: 0;
   overflow-y: auto;
 }
+img {
+  pointer-events: none;
+  -webkit-user-drag: none; 
+  user-drag: none;
+}
 .container {
   max-width: 1000px;
   margin: 20px auto;
