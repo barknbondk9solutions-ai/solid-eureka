@@ -139,6 +139,7 @@ if (clientIP) {
     }
   }
 }
+
 // ==========================
 // 3️⃣ Show Access Restricted HTML
 // ==========================
@@ -147,122 +148,133 @@ if (showAccessRestricted) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Restricted | BarkNBondK9Solutions, LLC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- SEO Meta -->
+<title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
+
 <meta name="description" content="BarkNBondK9Solutions, LLC offers professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral training, leash training, and more—right in your home.">
-<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training, in-home dog training, puppy trainer Miami, obedience training, behavioral dog training, leash training, puppy socialization, private dog trainer Miami, local dog trainer, certified dog trainer Miami-Dade, mobile obedience training, Miami dog behaviorist, dog recall training, housebreaking puppy, professional dog trainer Florida, BarkNBondK9Solutions Miami, dog training services Miami-Dade County, Miami, Coral Gables, Hialeah, Miami Beach, North Miami, South Miami, Kendall, Doral, Homestead, Aventura, Sunny Isles Beach, Bal Harbour, Surfside, Pinecrest">
+<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training, in-home dog training, puppy trainer Miami, obedience training, behavioral dog training, leash training, puppy socialization, private dog trainer Miami, local dog trainer, certified dog trainer Miami-Dade, mobile obedience training, Miami dog behaviorist, dog recall training, housebreaking puppy, professional dog trainer Florida, BarkNBondK9Solutions Miami, dog training services Miami-Dade County, Coral Gables, Kendall, Homestead, Hialeah, Miami Beach, North Miami, Palmetto Bay, Pinecrest, Doral, Miami Gardens, Sunny Isles Beach, Cutler Bay, Aventura, West Miami, Key Biscayne, Miami Lakes, South Miami, Miami Springs, Coral Terrace, Westchester, Kendall West, Richmond West, The Hammocks, University Park, Tamiami, Westwood Lakes, Fontainebleau, Olympia Heights">
 
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Social -->
 <meta property="og:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
 <meta property="og:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta property="og:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 <meta property="og:url" content="https://barknbondk9solutions.com">
 <meta property="og:type" content="website">
 
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
 <meta name="twitter:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta name="twitter:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    overflow-x: hidden;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  .logo {
-    max-width: 180px;
-    margin-bottom: 20px;
-    pointer-events: none;
-  }
-  h1 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #222;
-  }
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  .highlight { color:#e74c3c; font-weight:bold; }
-  footer { margin-top: 25px; font-size: 0.9em; color: #666; }
-  /* Main page preview */
-  .preview-section {
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-  }
-  .preview-section h2 { margin-bottom: 15px; }
-  .card-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-  .card {
-    background: #f5f5f5;
-    border-radius: 8px;
-    width: 260px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  }
-  .card img { width: 100%; display: block; }
-  .card-content { padding: 10px; }
-  .card-content h3 { margin: 5px 0; font-size: 1.1em; }
-  .card-content p { font-size: 0.95em; margin: 5px 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.logo {
+  max-width: 180px;
+  margin: 20px auto;
+  display: block;
+}
+h1, h2, h3 {
+  color: #222;
+  margin: 10px 0;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; margin-top: 30px; text-align:center; }
+h3 { font-size: 1.2em; }
+p { font-size: 1em; line-height: 1.5; margin-bottom: 15px; }
+.highlight { color: #e74c3c; font-weight: bold; }
+footer { margin-top: 30px; font-size: 0.9em; color: #666; text-align: center; }
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; display: block; height: 150px; object-fit: cover; }
+.card-content { padding: 10px; text-align: left; }
+a { color: #e74c3c; text-decoration: none; word-break: break-word; }
+@media (max-width: 768px) {
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
+  .card img { height: 120px; }
+  .container { padding: 15px; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1em; }
+  h3 { font-size: 0.95em; }
+  .card img { height: 100px; }
+}
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container" id="access-container">
   <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
+
   <h1>Access Restricted</h1>
-  <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based mobile dog training company serving <span class="highlight">Miami-Dade County</span>.</p>
+  <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
   <p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
 
-  <!-- ========================
-       Optional Main Page Preview
-  ======================== -->
-  <div class="preview-section">
-    <h2>Main Page Preview</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/70673692664__08abe4ce-bb42-48de-b11f-f850b6b365ae-AE07oge8E9cDwkj5.jpeg" alt="Puppy Training">
-        <div class="card-content">
-          <h3>Puppy Training</h3>
-          <p>Set your puppy up for success with early foundational training using positive methods.</p>
-        </div>
+  <p><strong>Contact Us:</strong><br>
+    📞 <a href="tel:8336584388">833-658-4388</a><br>
+    📧 <a href="mailto:info@barknbondk9solutions.com">info@barknbondk9solutions.com</a><br>
+    Hours: Mon–Fri 8am–5pm | Sat 8am–12pm | Sun Closed
+  </p>
+
+  <h2>Our Dog Training Services</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/70673692664__08abe4ce-bb42-48de-b11f-f850b6b365ae-AE07oge8E9cDwkj5.jpeg" alt="Puppy Training">
+      <div class="card-content">
+        <h3>Puppy Training</h3>
+        <p>Positive foundational training for your puppy's success at home.</p>
       </div>
-      <div class="card">
-        <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/img_7722-AwvDD0L1r3cJWkrN.jpeg" alt="Obedience Training">
-        <div class="card-content">
-          <h3>Basic Obedience</h3>
-          <p>Teach your dog essential commands and build strong communication skills.</p>
-        </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/img_7722-AwvDD0L1r3cJWkrN.jpeg" alt="Obedience Training">
+      <div class="card-content">
+        <h3>Basic Obedience</h3>
+        <p>Teach your dog essential commands and communication skills.</p>
       </div>
-      <div class="card">
-        <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/puppy-5413165_1280-Awv4eXMqlXhzn846.jpg" alt="Behavior Training">
-        <div class="card-content">
-          <h3>Behavior Modification</h3>
-          <p>Address unwanted behaviors like jumping, barking, and chewing in a trust-based way.</p>
-        </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/puppy-5413165_1280-Awv4eXMqlXhzn846.jpg" alt="Behavior Training">
+      <div class="card-content">
+        <h3>Behavior Modification</h3>
+        <p>Address unwanted behaviors like barking, jumping, and chewing.</p>
       </div>
-      <div class="card">
-        <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/dog-9295650_1280-A3Q2xZw1eMFEjey3.jpg" alt="Advanced Training">
-        <div class="card-content">
-          <h3>Advanced Skills</h3>
-          <p>Take your dog's learning to the next level with specialized training modules.</p>
-        </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/dog-9295650_1280-A3Q2xZw1eMFEjey3.jpg" alt="Advanced Training">
+      <div class="card-content">
+        <h3>Advanced Skills</h3>
+        <p>Specialized training to take your dog’s skills to the next level.</p>
       </div>
     </div>
   </div>
@@ -273,45 +285,52 @@ if (showAccessRestricted) {
 <script>
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Anti-copy / selection
-document.addEventListener('copy', e=>e.preventDefault());
-document.addEventListener('cut', e=>e.preventDefault());
-document.addEventListener('paste', e=>e.preventDefault());
-document.addEventListener('selectstart', e=>e.preventDefault());
-document.addEventListener('contextmenu', e=>e.preventDefault());
-document.addEventListener('keydown', e=>{
-  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())){
-    e.preventDefault(); alert("Action disabled.");
-  }
-  if(e.key === 'PrintScreen'){ navigator.clipboard.writeText(''); alert("Screenshots disabled."); }
+// Anti-copy / anti-inspect
+document.addEventListener('copy',e=>e.preventDefault());
+document.addEventListener('cut',e=>e.preventDefault());
+document.addEventListener('paste',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>e.preventDefault());
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('keydown',e=>{
+  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())){e.preventDefault(); alert("Action disabled.");}
+  if(e.key==='PrintScreen'){navigator.clipboard.writeText(''); alert("Screenshots disabled.");}
 });
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
-
-// DevTools detection
+document.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
+document.addEventListener('gesturestart',e=>e.preventDefault());
 (function(){
-  const devtools={open:false}; const threshold=160;
+  const devtools={open:false};
+  const threshold=160;
   setInterval(()=>{
-    const w=window.outerWidth-window.innerWidth, h=window.outerHeight-window.innerHeight;
-    if(w>threshold || h>threshold){
-      if(!devtools.open){ devtools.open=true; alert("DevTools detected! Page actions are disabled."); document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>"; }
+    const w=window.outerWidth-window.innerWidth;
+    const h=window.outerHeight-window.innerHeight;
+    if(w>threshold||h>threshold){
+      if(!devtools.open){
+        devtools.open=true;
+        alert("DevTools detected! Page actions are disabled.");
+        document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";
+      }
     } else devtools.open=false;
   },500);
-  window.onkeydown = e => {
-    if(e.key==="F12"||(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key))){ e.preventDefault(); alert("DevTools shortcuts disabled."); }
+  window.onkeydown=e=>{
+    if(e.key==="F12"||(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key))){
+      e.preventDefault();
+      alert("DevTools shortcuts disabled.");
+    }
   };
-  window.addEventListener('resize', ()=>{
-    if(window.outerWidth-window.innerWidth>threshold || window.outerHeight-window.innerHeight>threshold){ document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>"; }
+  window.addEventListener('resize',()=>{
+    if(window.outerWidth-window.innerWidth>threshold||window.outerHeight-window.innerHeight>threshold){
+      document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";
+    }
   });
 })();
-
-// Allow normal scrolling
 document.addEventListener('touchstart', e => { if(e.touches.length>1)e.preventDefault(); }, {passive:false});
 </script>
 </body>
 </html>`;
 
   const response = new Response(html, { status: 200, headers: { "Content-Type": "text/html" } });
-  if(addVpnHeader) response.headers.set("X-VPN-Warning","true");
+  if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
   return addSecurityHeaders(response);
 }
     // ==========================
