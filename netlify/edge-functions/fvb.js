@@ -148,7 +148,7 @@ if (showAccessRestricted) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
 
@@ -170,51 +170,73 @@ if (showAccessRestricted) {
 <meta name="twitter:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta name="twitter:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 
-<!-- LocalBusiness Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "BarkNBondK9Solutions, LLC",
-  "url": "https://barknbondk9solutions.com",
-  "logo": "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png",
-  "image": "https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png",
-  "telephone": "833-658-4388",
-  "email": "info@barknbondk9solutions.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Miami-Dade County",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
-    {"@type": "OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00"}
-  ],
-  "areaServed": {
-    "@type": "Place",
-    "name": "Miami-Dade County"
-  },
-  "description": "Professional mobile dog training in Miami-Dade County, Florida. Obedience, puppy, and behavior sessions — right at your home.",
-  "priceRange": "$$"
-}
-</script>
-
 <style>
-body{font-family:Arial,sans-serif;text-align:center;background:#f9f9f9;color:#333;padding:50px 20px;user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:none;}
-.container{max-width:700px;margin:0 auto;background:#fff;border-radius:12px;padding:40px 30px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-.logo{max-width:180px;margin-bottom:30px;pointer-events:none;}
-h1{font-size:2em;margin-bottom:20px;color:#222;}
-p{font-size:1.1em;line-height:1.6;margin-bottom:20px;}
-.highlight{color:#e74c3c;font-weight:bold;}
-footer{margin-top:40px;font-size:0.9em;color:#666;}
-a{color:#e74c3c;text-decoration:none;}
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.logo {
+  max-width: 180px;
+  margin: 20px auto;
+  display: block;
+}
+h1, h2, h3 {
+  color: #222;
+  margin: 10px 0;
+}
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; margin-top: 30px; text-align:center; }
+h3 { font-size: 1.2em; }
+p { font-size: 1em; line-height: 1.5; margin-bottom: 15px; }
+.highlight { color: #e74c3c; font-weight: bold; }
+footer { margin-top: 30px; font-size: 0.9em; color: #666; text-align: center; }
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; display: block; height: 150px; object-fit: cover; }
+.card-content { padding: 10px; text-align: left; }
+a { color: #e74c3c; text-decoration: none; word-break: break-word; }
+@media (max-width: 768px) {
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
+  .card img { height: 120px; }
+  .container { padding: 15px; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1em; }
+  h3 { font-size: 0.95em; }
+  .card img { height: 100px; }
+}
 </style>
 </head>
 <body>
 <div class="container" id="access-container">
   <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
-  
+
   <h1>Access Restricted</h1>
   <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
   <p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
@@ -225,9 +247,36 @@ a{color:#e74c3c;text-decoration:none;}
     Hours: Mon–Fri 8am–5pm | Sat 8am–12pm | Sun Closed
   </p>
 
-  <!-- Optional hidden content for bots -->
-  <div class="seo-text" style="display:none;">
-    BarkNBondK9Solutions provides mobile dog training in all Miami-Dade County cities including Coral Gables, Kendall, Homestead, Hialeah, Miami Beach, North Miami, Palmetto Bay, Pinecrest, Doral, Miami Gardens, Sunny Isles Beach, Cutler Bay, Aventura, West Miami, Key Biscayne, Miami Lakes, South Miami, Miami Springs, Coral Terrace, Westchester, Kendall West, Richmond West, The Hammocks, University Park, Tamiami, Westwood Lakes, Fontainebleau, Olympia Heights. Services include obedience training, puppy training, behavior modification, leash training, recall training, and private in-home sessions.
+  <h2>Our Dog Training Services</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/70673692664__08abe4ce-bb42-48de-b11f-f850b6b365ae-AE07oge8E9cDwkj5.jpeg" alt="Puppy Training">
+      <div class="card-content">
+        <h3>Puppy Training</h3>
+        <p>Positive foundational training for your puppy's success at home.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/img_7722-AwvDD0L1r3cJWkrN.jpeg" alt="Obedience Training">
+      <div class="card-content">
+        <h3>Basic Obedience</h3>
+        <p>Teach your dog essential commands and communication skills.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/puppy-5413165_1280-Awv4eXMqlXhzn846.jpg" alt="Behavior Training">
+      <div class="card-content">
+        <h3>Behavior Modification</h3>
+        <p>Address unwanted behaviors like barking, jumping, and chewing.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/dog-9295650_1280-A3Q2xZw1eMFEjey3.jpg" alt="Advanced Training">
+      <div class="card-content">
+        <h3>Advanced Skills</h3>
+        <p>Specialized training to take your dog’s skills to the next level.</p>
+      </div>
+    </div>
   </div>
 
   <footer>&copy; <span id="currentYear"></span> BarkNBondK9Solutions, LLC | Serving dog owners throughout Miami-Dade County</footer>
@@ -243,20 +292,12 @@ document.addEventListener('paste',e=>e.preventDefault());
 document.addEventListener('selectstart',e=>e.preventDefault());
 document.addEventListener('contextmenu',e=>e.preventDefault());
 document.addEventListener('keydown',e=>{
-  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())){
-    e.preventDefault();
-    alert("Action disabled.");
-  }
-  if(e.key==='PrintScreen'){
-    navigator.clipboard.writeText('');
-    alert("Screenshots disabled.");
-  }
+  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())){e.preventDefault(); alert("Action disabled.");}
+  if(e.key==='PrintScreen'){navigator.clipboard.writeText(''); alert("Screenshots disabled.");}
 });
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
 document.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
 document.addEventListener('gesturestart',e=>e.preventDefault());
-
-// DevTools detection
 (function(){
   const devtools={open:false};
   const threshold=160;
@@ -267,7 +308,7 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
       if(!devtools.open){
         devtools.open=true;
         alert("DevTools detected! Page actions are disabled.");
-        document.body.innerHTML="<h1 style='color:red;text-align:center;'>Access Denied</h1>";
+        document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";
       }
     } else devtools.open=false;
   },500);
@@ -277,6 +318,11 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
       alert("DevTools shortcuts disabled.");
     }
   };
+  window.addEventListener('resize',()=>{
+    if(window.outerWidth-window.innerWidth>threshold||window.outerHeight-window.innerHeight>threshold){
+      document.body.innerHTML="<h1 style='color:red'>Access Denied</h1>";
+    }
+  });
 })();
 </script>
 </body>
@@ -286,7 +332,6 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
   if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
   return addSecurityHeaders(response);
 }
-
     // ==========================
     // 4️⃣ Default: allow humans
     // ==========================
