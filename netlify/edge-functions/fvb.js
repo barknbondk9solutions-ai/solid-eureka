@@ -140,28 +140,35 @@ if (clientIP) {
   }
 }
 
-    // ==========================
-    // 3️⃣ Show Access Restricted HTML
-    // ==========================
-    if (showAccessRestricted) {
-      const html = `<!DOCTYPE html>
+// ==========================
+// 3️⃣ Show Access Restricted HTML
+// ==========================
+if (showAccessRestricted) {
+  const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Restricted | BarkNBondK9Solutions, LLC</title>
 
-<!-- SEO + Local Metadata -->
-<meta name="description" content="BarkNBondK9Solutions, LLC is a mobile dog training company proudly serving Miami-Dade County, Florida. Professional, in-home obedience, puppy, and behavior training for dogs of all breeds.">
-<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training Miami, in-home dog training, puppy trainer Miami, obedience training, dog behaviorist Miami, dog training services Miami-Dade County, local dog trainer Miami-Dade, professional dog trainer Florida, puppy obedience, leash training, BarkNBondK9Solutions Miami, Bark N Bond K9 Solutions, dog training Coral Gables, dog trainer Kendall, dog training Homestead, dog training Hialeah, dog trainer Miami Beach, dog training North Miami, dog trainer Palmetto Bay, dog trainer Pinecrest, dog trainer Doral, dog trainer Miami Gardens, dog trainer Sunny Isles Beach, dog trainer Cutler Bay, dog trainer Aventura, dog trainer West Miami, dog trainer Key Biscayne, dog trainer Miami Lakes, dog trainer South Miami, dog trainer Miami Springs, dog trainer Coral Terrace, dog trainer Westchester, dog trainer Kendall West, dog trainer Richmond West, dog trainer The Hammocks, dog trainer University Park, dog trainer Tamiami, dog trainer Westwood Lakes, dog trainer Fontainebleau, dog trainer Olympia Heights, dog trainer Glenvar Heights">
-<meta name="robots" content="index,follow">
+<title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
+
+<meta name="description" content="BarkNBondK9Solutions, LLC offers professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral training, leash training, and more—right in your home.">
+<meta name="keywords" content="dog trainer Miami, dog training Miami-Dade, mobile dog training, in-home dog training, puppy trainer Miami, obedience training, behavioral dog training, leash training, puppy socialization, private dog trainer Miami, local dog trainer, certified dog trainer Miami-Dade, mobile obedience training, Miami dog behaviorist, dog recall training, housebreaking puppy, professional dog trainer Florida, BarkNBondK9Solutions Miami, dog training services Miami-Dade County, Coral Gables, Kendall, Homestead, Hialeah, Miami Beach, North Miami, Palmetto Bay, Pinecrest, Doral, Miami Gardens, Sunny Isles Beach, Cutler Bay, Aventura, West Miami, Key Biscayne, Miami Lakes, South Miami, Miami Springs, Coral Terrace, Westchester, Kendall West, Richmond West, The Hammocks, University Park, Tamiami, Westwood Lakes, Fontainebleau, Olympia Heights">
+
+<meta name="robots" content="index, follow">
 
 <!-- Open Graph / Social -->
-<meta property="og:title" content="Access Restricted | BarkNBondK9Solutions, LLC">
-<meta property="og:description" content="Mobile dog training company serving Miami-Dade County, Florida. Access restricted outside service area.">
+<meta property="og:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
+<meta property="og:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
 <meta property="og:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
-<meta property="og:url" content="https://barknbondk9solutions.com/access-restricted">
+<meta property="og:url" content="https://barknbondk9solutions.com">
 <meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BarkNBondK9Solutions | Mobile Dog Training Miami-Dade">
+<meta name="twitter:description" content="Professional mobile dog training in Miami-Dade County. Puppy training, obedience, behavioral coaching, and more—right at your home.">
+<meta name="twitter:image" content="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png">
 
 <!-- LocalBusiness Schema -->
 <script type="application/ld+json">
@@ -194,56 +201,20 @@ if (clientIP) {
 </script>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #f9f9f9;
-  color: #333;
-  padding: 50px 20px;
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
-  overscroll-behavior: none;
-}
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 12px;
-  padding: 40px 30px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-.logo {
-  max-width: 180px;
-  margin-bottom: 30px;
-  pointer-events: none;
-}
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #222;
-}
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-.highlight {
-  color: #e74c3c;
-  font-weight: bold;
-}
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #666;
-}
+body{font-family:Arial,sans-serif;text-align:center;background:#f9f9f9;color:#333;padding:50px 20px;user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:none;}
+.container{max-width:700px;margin:0 auto;background:#fff;border-radius:12px;padding:40px 30px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.logo{max-width:180px;margin-bottom:30px;pointer-events:none;}
+h1{font-size:2em;margin-bottom:20px;color:#222;}
+p{font-size:1.1em;line-height:1.6;margin-bottom:20px;}
+.highlight{color:#e74c3c;font-weight:bold;}
+footer{margin-top:40px;font-size:0.9em;color:#666;}
+a{color:#e74c3c;text-decoration:none;}
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container" id="access-container">
   <img src="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" class="logo" alt="Logo" draggable="false">
+  
   <h1>Access Restricted</h1>
   <p>Thank you for visiting <span class="highlight">BarkNBondK9Solutions, LLC</span>. We are a Florida-based dog training company providing professional services in <span class="highlight">Miami-Dade County</span>.</p>
   <p>If you are outside Florida or using a VPN/proxy, access to some parts of the site may be restricted.</p>
@@ -254,20 +225,25 @@ footer {
     Hours: Mon–Fri 8am–5pm | Sat 8am–12pm | Sun Closed
   </p>
 
+  <!-- Optional hidden content for bots -->
+  <div class="seo-text" style="display:none;">
+    BarkNBondK9Solutions provides mobile dog training in all Miami-Dade County cities including Coral Gables, Kendall, Homestead, Hialeah, Miami Beach, North Miami, Palmetto Bay, Pinecrest, Doral, Miami Gardens, Sunny Isles Beach, Cutler Bay, Aventura, West Miami, Key Biscayne, Miami Lakes, South Miami, Miami Springs, Coral Terrace, Westchester, Kendall West, Richmond West, The Hammocks, University Park, Tamiami, Westwood Lakes, Fontainebleau, Olympia Heights. Services include obedience training, puppy training, behavior modification, leash training, recall training, and private in-home sessions.
+  </div>
+
   <footer>&copy; <span id="currentYear"></span> BarkNBondK9Solutions, LLC | Serving dog owners throughout Miami-Dade County</footer>
 </div>
 
 <script>
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Anti-copy & anti-inspect
+// Anti-copy / anti-inspect
 document.addEventListener('copy',e=>e.preventDefault());
 document.addEventListener('cut',e=>e.preventDefault());
 document.addEventListener('paste',e=>e.preventDefault());
 document.addEventListener('selectstart',e=>e.preventDefault());
 document.addEventListener('contextmenu',e=>e.preventDefault());
 document.addEventListener('keydown',e=>{
-  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())) {
+  if(e.ctrlKey && ['s','p','c','x','a','u'].includes(e.key.toLowerCase())){
     e.preventDefault();
     alert("Action disabled.");
   }
@@ -305,10 +281,11 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
 </script>
 </body>
 </html>`;
-      const response = new Response(html, { status: 200, headers: { "Content-Type": "text/html" } });
-      if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
-      return addSecurityHeaders(response);
-    }
+
+  const response = new Response(html, { status: 200, headers: { "Content-Type": "text/html" } });
+  if (addVpnHeader) response.headers.set("X-VPN-Warning","true");
+  return addSecurityHeaders(response);
+}
 
     // ==========================
     // 4️⃣ Default: allow humans
