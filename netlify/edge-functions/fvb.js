@@ -148,8 +148,7 @@ if (showAccessRestricted) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BarkNBondK9Solutions, LLC | Mobile Dog Training Miami-Dade</title>
 
 <meta name="description" content="BarkNBondK9Solutions, LLC provides professional mobile dog training in Miami-Dade County. Services include puppy training, obedience, behavioral coaching, leash training, and more—right at your home.">
@@ -304,7 +303,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='PrintScreen'){navigator.clipboard.writeText(''); alert("Screenshots disabled.");}
 });
 document.querySelectorAll('img').forEach(img=>img.setAttribute('draggable','false'));
-document.addEventListener('touchstart',e=>e.preventDefault(),{passive:true});
+document.addEventListener('touchstart',e=>e.preventDefault(),{passive:false});
 document.addEventListener('gesturestart',e=>e.preventDefault());
 (function(){
   const devtools={open:false};
