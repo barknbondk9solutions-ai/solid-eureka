@@ -1,0 +1,7 @@
+[[edge_functions]]
+path = "/*"
+function = "fvb"
+
+[[edge_functions]]
+path = "/verify-captcha"
+function = "verify-captcha"
