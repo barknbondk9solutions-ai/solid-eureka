@@ -5,12 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BarkNBondK9Solutions, LLC | Mobile Dog Training in Miami-Dade</title>
 
-<!-- Preconnect / DNS Prefetch for third-party resources -->
-<link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://client.crisp.chat">
-<link rel="dns-prefetch" href="https://assets.zyrosite.com">
-
 <link rel="canonical" href="https://barknbondk9solutions.com/">
 <link rel="icon" href="https://assets.zyrosite.com/YrDqlxeZ4JTQb14e/logo-clear-m5KMx0qLg1sRj6X7.png" type="image/png">
 
@@ -63,19 +57,17 @@
   ]
 }
 </script>
-
-<!-- Optimized CSS loading -->
-<link rel="preload" href="style.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="style.min.css"></noscript>
-<link rel="preload" href="banner-style.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="banner-style.min.css"></noscript>
-
+    <link rel="stylesheet" href="style.min.css" />
+  <link rel="stylesheet" href="banner-style.min.css" />
+  <style>
+  </style>
 </head>
 <body>
 
 <!-- =======================
      HEADER
 ======================= -->
+
 <header id="site-header">
   <nav class="nav-bar">
     <button class="hamburger" id="hamburger">&#9776;</button>
@@ -148,18 +140,19 @@
     <p>
       &copy; <span id="current-year"></span> All rights reserved. BarkNBondK9Solutions, LLC<br>
       Licensed & Insured<br>
-      <a href="https://legal.barknbondk9solutions.com/#terms" target="_blank">Terms & Conditions</a> |
-      <a href="https://legal.barknbondk9solutions.com/#privacy" target="_blank">Privacy Policy</a> |
-      <a href="https://legal.barknbondk9solutions.com/#waiver" target="_blank">Liability Waiver</a> |
-      <a href="https://legal.barknbondk9solutions.com/#faq" target="_blank">FAQ</a> |
-      <a href="https://legal.barknbondk9solutions.com/#accessibility" target="_blank">Accessibility</a>
+      <a href="https://legal.barknbondk9solutions.com/#terms"_blank">Terms & Conditions</a> |
+      <a href="https://legal.barknbondk9solutions.com/#privacy"_blank">Privacy Policy</a> |
+      <a href="https://legal.barknbondk9solutions.com/#waiver"_blank">Liability Waiver</a> |
+      <a href="https://legal.barknbondk9solutions.com/#faq"_blank">FAQ</a> |
+      <a href="https://legal.barknbondk9solutions.com/#accessibility"_blank">Accessibility</a>
     </p>
   </div>
 </footer>
   
+  
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YDTVFLPLH"></script>
-<script defer>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -167,25 +160,24 @@
 </script>
 
 <!-- Crisp Chat -->
-<script defer type="text/javascript">
+<script type="text/javascript">
   window.$crisp = [];
   window.CRISP_WEBSITE_ID = "3414fd4a-ab39-440d-a142-8cf19be43ed1";
   (function () {
     const d = document;
     const s = d.createElement("script");
     s.src = "https://client.crisp.chat/l.js";
-    s.async = true;
+    s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s);
   })();
 </script>
 
-<!-- Banner / UI scripts deferred -->
-<script defer src="banner.obf.js"></script>
-<script defer src="ui-widgets.js"></script>
-<script defer src="/recap-loader.js"></script>
 
-<!-- Set current year dynamically -->
-<script defer>
+<script src="banner.obf.js"defer></script>
+<script src="ui-widgets.js"defer></script>
+<script src="/recap-loader.js" defer></script>
+<script>
+// Set current year dynamically
 document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
 
