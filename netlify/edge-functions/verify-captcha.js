@@ -38,7 +38,7 @@ export default async (request) => {
     });
     const data = await response.json();
 
-    if (!data.success || data.score < 0.2) { // optional: score threshold
+    if (!data.success || data.score < 0.4) { // optional: score threshold
       return new Response(JSON.stringify({ success: false }), {
         status: 403,
         headers: { "content-type": "application/json" }
